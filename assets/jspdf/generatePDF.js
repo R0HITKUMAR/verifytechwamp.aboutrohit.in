@@ -33,7 +33,7 @@ function generatePDFAdmin(ID) {
 }
 
 function displayToAdmin(ID, pdfDataUri, pdfBytes) {
-    var adobeDCView = new AdobeDC.View({ clientId: "b38665fbeadd4ce896557cf8315eea9e", divId: "adobe-dc-view" });
+    var adobeDCView = new AdobeDC.View({ clientId: "ec3721b6a99945b0b1ed013c5306b141", divId: "adobe-dc-view" });
     adobeDCView.previewFile({
         content: { location: { url: pdfDataUri } },
         metaData: { fileName: "Certificates.pdf" }
@@ -70,7 +70,7 @@ function generatePDFUser(ID) {
 }
 
 function displayToUser(ID, pdfDataUri, pdfBytes) {
-    var adobeDCView = new AdobeDC.View({ clientId: "b38665fbeadd4ce896557cf8315eea9e", divId: "user-adobe-dc-view" });
+    var adobeDCView = new AdobeDC.View({ clientId: "ec3721b6a99945b0b1ed013c5306b141", divId: "user-adobe-dc-view" });
     adobeDCView.previewFile({
         content: { location: { url: pdfDataUri } },
         metaData: { fileName: "Certificates.pdf" }
@@ -87,7 +87,7 @@ function displayToUser(ID, pdfDataUri, pdfBytes) {
 }
 
 function displayToVerify(ID, pdfDataUri, pdfBytes) {
-    var adobeDCView = new AdobeDC.View({ clientId: "b38665fbeadd4ce896557cf8315eea9e", divId: "pdf-viewer" });
+    var adobeDCView = new AdobeDC.View({ clientId: "ec3721b6a99945b0b1ed013c5306b141", divId: "pdf-viewer" });
     adobeDCView.previewFile({
         content: { location: { url: pdfDataUri } },
         metaData: { fileName: "Certificates.pdf" }
